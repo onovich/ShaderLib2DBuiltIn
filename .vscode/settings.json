@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "ShaderLib2DBuilltIn.sln"
+    "dotnet.defaultSolution": "ShaderLib2DBuiltIn.sln"
 }
