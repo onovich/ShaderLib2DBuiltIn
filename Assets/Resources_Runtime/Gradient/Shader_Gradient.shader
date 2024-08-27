@@ -9,7 +9,7 @@ Shader "Unlit/Shader_Gradient"
         [Enum(Replace,0, Multiply,1)] 
         _SrcBlend ("Src Blend", Float) = 0
         [Toggle]
-        _Auto ("Auto", Float) = 0
+        _Auto ("Auto", Int) = 0
     }
 
     SubShader
@@ -80,4 +80,5 @@ Shader "Unlit/Shader_Gradient"
             ENDCG
         }
     }
+    FallBack "Diffuse"
 }

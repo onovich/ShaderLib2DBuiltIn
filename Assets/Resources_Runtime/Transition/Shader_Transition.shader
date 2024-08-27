@@ -73,4 +73,5 @@ Shader "Unlit/Shader_Transition"
             ENDCG
         }
     }
+    FallBack "Diffuse"
 }

@@ -51,7 +51,7 @@ Shader "Unlit/Shader_RGBShift"
             inline fixed4 GetRGBShiftColor(v2f i){
                 float2 coords = i.uv.xy;
                 float offset = _Amount;
-                
+
                 float4 red = tex2D(_MainTex , coords.xy - offset);
                 float4 green = tex2D(_MainTex, coords.xy );
                 float4 blue = tex2D(_MainTex, coords.xy + offset);
@@ -69,4 +69,5 @@ Shader "Unlit/Shader_RGBShift"
             ENDCG
         }
     }
+    FallBack "Diffuse"
 }
