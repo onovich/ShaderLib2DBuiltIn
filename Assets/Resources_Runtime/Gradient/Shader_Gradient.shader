@@ -54,7 +54,7 @@ Shader "Unlit/Shader_Gradient"
                 return o;
             }
 
-            inline fixed4 GetDissolvedColor(v2f i){
+            inline fixed4 GetGradientColor(v2f i){
                 fixed4 baseColor = tex2D(_MainTex, i.uv);
                 fixed4 color1 = tex2D(_Tex1, i.uv);
                 fixed4 color2 = tex2D(_Tex2, i.uv);
@@ -74,7 +74,7 @@ Shader "Unlit/Shader_Gradient"
 
             fixed4 frag (v2f i) : SV_Target
             {
-                fixed4 c = GetDissolvedColor(i);
+                fixed4 c = GetGradientColor(i);
                 return c;
             }
             ENDCG
