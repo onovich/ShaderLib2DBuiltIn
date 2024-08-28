@@ -2,10 +2,10 @@ Shader "Custom/Shader_Vortex"
 {
     Properties
     {
-        _Colour1 ("Colour 1", Color) = (1,0,0,1)
-        _Colour2 ("Colour 2", Color) = (0,0,1,1)
-        _Colour3 ("Transition Colour", Color) = (0,0,0,1)
-        _Colour4 ("Start/End Colour", Color) = (1,1,1,1)
+        _Color1 ("Color 1", Color) = (1,0,0,1)
+        _Color2 ("Color 2", Color) = (0,0,1,1)
+        _Color3 ("Transition Color", Color) = (0,0,0,1)
+        _Color4 ("Start/End Color", Color) = (1,1,1,1)
         _Contrast ("Contrast", Range(0, 10)) = 5
         _Gradual ("Gradual", Range(0.0, 2.0)) = 2.0
         _Width1 ("Width 1", Range(0.01, 1.0)) = 0.04
@@ -44,10 +44,10 @@ Shader "Custom/Shader_Vortex"
             sampler2D _MainTex;
             float4 _MainTex_ST;
 
-            float3 _Colour1;
-            float3 _Colour2;
-            float3 _Colour3;
-            float3 _Colour4;
+            float3 _Color1;
+            float3 _Color2;
+            float3 _Color3;
+            float3 _Color4;
             int _Contrast;
             float _Gradual;
             float _Width1;
@@ -115,7 +115,7 @@ Shader "Custom/Shader_Vortex"
                 float cIn = max(0.0, -(paintRes - _Width1)) * (1.0 / _Width1);
                 float c4p = cOut + cIn;
 
-                float3 retColor = ApplyGradient(_Colour1, _Colour2, _Colour3, _Colour4, paintRes, c3p, c4p);
+                float3 retColor = ApplyGradient(_Color1, _Color2, _Color3, _Color4, paintRes, c3p, c4p);
 
                 return float4(retColor, 1.0);
             }
