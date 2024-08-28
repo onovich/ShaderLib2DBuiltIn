@@ -19,8 +19,11 @@ Shader "Custom/Shader_Vortex"
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" }
-        LOD 200
+        Tags { "RenderType"="Transparent" }
+        LOD 100
+
+        // 设置透明混合模式
+        Blend SrcAlpha OneMinusSrcAlpha 
 
         Pass
         {
