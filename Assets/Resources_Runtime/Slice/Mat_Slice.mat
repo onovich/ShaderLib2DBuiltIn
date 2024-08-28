@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mat_Transition
-  m_Shader: {fileID: 4800000, guid: 936e6d3f58c2042f8baf38b6297efc02, type: 3}
+  m_Name: Mat_Slice
+  m_Shader: {fileID: 4800000, guid: 3d7175a4ce785495fb84f8c243eebe9d, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -19,22 +19,23 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
-  m_LockedProperties: 
+  m_LockedProperties: _Displacement
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _DissolveTex:
-        m_Texture: {fileID: 2800000, guid: 8bcef76b18e99482ba5e27874ba2635b, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _SmoothFactor: 0.27
-    - _T: 0.11
+    - _Auto: 0
+    - _AutoSpeed: 0.2
+    - _Displacement: 0.0363
+    - _GlitchAmount: 0.159
+    - _LineWidth: 4
+    - _SliceSize: 0.01
+    - _Speed: 0.62
     m_Colors:
-    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
+    - _LineColor: {r: 1, g: 1, b: 1, a: 0.5}
   m_BuildTextureStacks: []

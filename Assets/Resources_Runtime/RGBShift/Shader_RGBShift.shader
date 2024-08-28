@@ -52,11 +52,12 @@ Shader "Unlit/Shader_RGBShift"
                 float2 coords = i.uv.xy;
                 float offset = _Amount;
 
+                float4 baseColor = tex2D(_MainTex, coords.xy);
                 float4 red = tex2D(_MainTex , coords.xy - offset);
                 float4 green = tex2D(_MainTex, coords.xy );
                 float4 blue = tex2D(_MainTex, coords.xy + offset);
                 
-                float4 finalColor = float4(red.r, green.g, blue.b, 1.0f);
+                float4 finalColor = float4(red.r, green.g, blue.b, (red.a + green.a + blue.a)/3);
                 return finalColor;
             }
 

@@ -12,8 +12,7 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
-  m_InvalidKeywords:
-  - _AUTO_ON
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -34,11 +33,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Auto: 1
-    - _AutoSpeed: 0.014
+    - _Auto: 0
+    - _AutoSpeed: 0.034
     - _Hardness: 2.64
     - _LineSpacing: 0.1
-    - _LineWidth: 1.14
+    - _LineWidth: 0.46
     - _Size: 0.2
     - _Speed: 0.37
     - _Strength: 0.653
