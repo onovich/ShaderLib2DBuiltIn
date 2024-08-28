@@ -31,11 +31,11 @@ Material:
     m_Floats:
     - _Auto: 0
     - _AutoSpeed: 0.2
-    - _Displacement: 0.0363
-    - _GlitchAmount: 0.159
+    - _Displacement: 0.0511
+    - _GlitchAmount: 0.074
     - _LineWidth: 4
-    - _SliceSize: 0.01
-    - _Speed: 0.62
+    - _SliceSize: 0.021
+    - _Speed: 0.8
     m_Colors:
     - _LineColor: {r: 1, g: 1, b: 1, a: 0.5}
   m_BuildTextureStacks: []
