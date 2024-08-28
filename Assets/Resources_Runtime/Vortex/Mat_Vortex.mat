@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mat_Glow
-  m_Shader: {fileID: 4800000, guid: e4b76a913abbe4f928c61200fd1f43b2, type: 3}
+  m_Name: Mat_Vortex
+  m_Shader: {fileID: 4800000, guid: 7c59284ee50b6455d9fa60150e8506ad, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -23,26 +23,26 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _GlowTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Ints:
-    - _GridSize: 5
+    m_Ints: []
     m_Floats:
-    - _BlurIntensity: 0.5
-    - _BlurRadius: 10
-    - _BlurSize: 4.89
-    - _Distortion: 0.5
-    - _GlowIntensity: 0.63
-    - _GlowSize: 2.61
-    - _GridSize: 51.65
-    - _Iterations: 1
-    - _Spread: 17.45
+    - _BlurSize: 1
+    - _Contrast: 2.16
+    - _Gradual: 1.7
+    - _Intensity: 0.84
+    - _Scale1: 4.9
+    - _Scale2: 1.14
+    - _SpinAmount: 1.9
+    - _SpinSpeed: 5.71
+    - _Width1: 0.079
+    - _Width2: 0.336
     m_Colors:
-    - _GlowColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour1: {r: 1, g: 0, b: 0, a: 1}
+    - _Colour2: {r: 0, g: 0, b: 1, a: 1}
+    - _Colour3: {r: 0, g: 0, b: 0, a: 1}
+    - _Colour4: {r: 1, g: 1, b: 1, a: 1}
+    - _Offset: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
