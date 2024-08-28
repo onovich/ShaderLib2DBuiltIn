@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mat_Wobble
-  m_Shader: {fileID: 4800000, guid: 92665fc9b00784409aa18d532c26ace0, type: 3}
+  m_Name: Mat_Melt
+  m_Shader: {fileID: 4800000, guid: fcf31cb92e1a74380bff95693e4101e7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -23,19 +23,20 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _GlossTex:
+        m_Texture: {fileID: 2800000, guid: 8bcef76b18e99482ba5e27874ba2635b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BlurAmount: 0.863
-    - _Distortion: 0.284
-    - _MeltAmount: 0.051
-    - _MeltSpeed: 4.92
-    - _WobbleAmount: 0.0529
-    - _WobbleFrequency: 9.54
-    - _WobbleSpeed: 2.93
-    m_Colors:
-    - _MeltColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Amount: 0.01
+    - _DistortionStrength: 1
+    - _Glossiness: 0
+    - _RippleAmplitude: 1
+    - _RippleFrequency: 10
+    m_Colors: []
   m_BuildTextureStacks: []
