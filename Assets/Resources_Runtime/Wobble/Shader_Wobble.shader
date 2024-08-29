@@ -6,6 +6,8 @@ Shader "Unlit/Shader_Wobble"
         _WobbleAmount ("Wobble Amount", Range(0.0, 0.1)) = 0.05
         _WobbleSpeed ("Wobble Speed", Range(0.0, 10.0)) = 1.0
         _WobbleFrequency ("Wobble Frequency", Range(0.0, 10.0)) = 1.0
+        [Toggle]
+        _FreezeY ("FreezeY", int) = 0
     }
 
     SubShader
@@ -28,6 +30,7 @@ Shader "Unlit/Shader_Wobble"
             float _WobbleSpeed;
             float _WobbleFrequency;
             float2 _MainTex_TexelSize;
+            int _FreezeY;
 
             struct appdata_t
             {
@@ -54,6 +57,9 @@ Shader "Unlit/Shader_Wobble"
                 float wobbleX = sin(i.uv.y * _WobbleFrequency + _Time.y * _WobbleSpeed) * _WobbleAmount;
                 float wobbleY = cos(i.uv.x * _WobbleFrequency + _Time.y * _WobbleSpeed) * _WobbleAmount;
                 float2 uvOffset = float2(wobbleX, wobbleY);
+                if(_FreezeY == 1){
+                    uvOffset *= i.uv.y;
+                }
                 fixed4 color = tex2D(_MainTex, i.uv + uvOffset);
                 return color;
             }

@@ -31,6 +31,7 @@ Material:
     m_Floats:
     - _BlurAmount: 0.863
     - _Distortion: 0.284
+    - _FreezeY: 0
     - _MeltAmount: 0.051
     - _MeltSpeed: 4.92
     - _WobbleAmount: 0.0529
