@@ -30,7 +30,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _BlurSize: 1
-    - _Contrast: 2.16
+    - _Contrast: 2.46
     - _Gradual: 1.7
     - _Intensity: 0.84
     - _Scale1: 4.9
@@ -40,6 +40,10 @@ Material:
     - _Width1: 0.079
     - _Width2: 0.336
     m_Colors:
+    - _Color1: {r: 1, g: 0, b: 0, a: 1}
+    - _Color2: {r: 0, g: 0, b: 1, a: 1}
+    - _Color3: {r: 0, g: 0, b: 0, a: 1}
+    - _Color4: {r: 1, g: 1, b: 1, a: 1}
     - _Colour1: {r: 1, g: 0, b: 0, a: 1}
     - _Colour2: {r: 0, g: 0, b: 1, a: 1}
     - _Colour3: {r: 0, g: 0, b: 0, a: 1}
