@@ -4,6 +4,7 @@ Shader "Custom/Shader_Portal"
     {
         _MainTex ("Texture", 2D) = "white" {}
         _Mask("Mask", 2D) = "white" {}
+        [HDR]
         _Color ("Colour", Color) = (1,0,0,1)
         _Strength ("Strength", float) = 1.0
         _Brightness ("Brightness", float) = 1.0
