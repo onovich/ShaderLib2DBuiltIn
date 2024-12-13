@@ -1,4 +1,4 @@
-Shader "Unlit/Shader_Slice"
+Shader "Custom/Shader_Slice"
 {
 
     Properties 

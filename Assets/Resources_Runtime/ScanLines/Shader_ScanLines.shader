@@ -1,4 +1,4 @@
-Shader "Unlit/Shader_ScanLines"
+Shader "Custom/Shader_ScanLines"
 {
 
     Properties 

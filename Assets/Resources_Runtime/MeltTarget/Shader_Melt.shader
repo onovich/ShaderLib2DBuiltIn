@@ -1,4 +1,4 @@
-Shader "Unlit/Shader_Melt"
+Shader "Custom/Shader_Melt"
 {
     Properties
     {

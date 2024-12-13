@@ -1,4 +1,4 @@
-Shader "Unlit/Shader_Transition"
+Shader "Custom/Shader_Transition"
 {
     Properties
     {

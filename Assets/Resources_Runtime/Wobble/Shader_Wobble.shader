@@ -1,4 +1,4 @@
-Shader "Unlit/Shader_Wobble"
+Shader "Custom/Shader_Wobble"
 {
     Properties
     {

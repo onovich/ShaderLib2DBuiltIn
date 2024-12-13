@@ -1,4 +1,4 @@
-Shader "Unlit/Shader_Gradient"
+Shader "Custom/Shader_Gradient"
 {
     Properties
     {

@@ -1,4 +1,4 @@
-Shader "Unlit/Shader_RGBShift"
+Shader "Custom/Shader_RGBShift"
 {
     Properties
     {
