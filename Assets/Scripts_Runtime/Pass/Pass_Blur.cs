@@ -16,7 +16,7 @@ public class Pass_Blur : ScriptableRenderPass {
     Volume_Blur volume;
 
     public void Setup(RenderTargetIdentifier rt) {
-        renderPassEvent = RenderPassEvent.AfterRenderingPostProcessing;
+        renderPassEvent = RenderPassEvent.BeforeRenderingPostProcessing;
         material = CoreUtils.CreateEngineMaterial(shader);
         renderTag = "BlurRender";
         mainTexID = Shader.PropertyToID("_MainTex");

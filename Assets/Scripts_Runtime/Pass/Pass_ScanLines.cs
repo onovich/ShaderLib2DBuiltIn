@@ -16,7 +16,7 @@ public class Pass_ScanLines : ScriptableRenderPass {
     Volume_ScanLines volume;
 
     public void Setup(RenderTargetIdentifier rt) {
-        renderPassEvent = RenderPassEvent.AfterRenderingPostProcessing;
+        renderPassEvent = RenderPassEvent.BeforeRenderingPostProcessing;
         material = CoreUtils.CreateEngineMaterial(shader);
         renderTag = "ScanLinesRender";
         mainTexID = Shader.PropertyToID("_MainTex");

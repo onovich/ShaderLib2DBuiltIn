@@ -7,7 +7,7 @@ Shader "Custom/Shader_Blur"
     }
     SubShader
     {
-        Tags { "RenderType"="Transparent" }
+        Tags { "RenderType"="Transparent" "RenderPipeline" = "UniversalPipeline" }
         LOD 100
 
         // 设置透明混合模式
@@ -15,6 +15,7 @@ Shader "Custom/Shader_Blur"
 
         Pass
         {
+            Tags { "LightMode" = "UniversalForward" }
             // Pass 1: Horizontal Blur
             CGPROGRAM
             #pragma vertex vert

@@ -35,16 +35,16 @@ MonoBehaviour:
     m_Value: 1
   lineWidth:
     m_OverrideState: 1
-    m_Value: 8.12
+    m_Value: 2222
   lineColor:
     m_OverrideState: 1
     m_Value: {r: 1, g: 1, b: 1, a: 0.5}
   isAuto:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   autoSpeed:
-    m_OverrideState: 1
-    m_Value: 0.2
+    m_OverrideState: 0
+    m_Value: 9.15
 --- !u!114 &5317029440670806991
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -125,8 +125,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   isEnable:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
   blurSize:
     m_OverrideState: 1
-    m_Value: 20.73
+    m_Value: 1.96

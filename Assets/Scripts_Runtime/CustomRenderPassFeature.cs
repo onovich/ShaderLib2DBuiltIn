@@ -8,48 +8,42 @@ public class CustomRenderPassFeature : ScriptableRendererFeature {
 
     public override void Create() {
         {
-            if (blurPass != null) {
-                return;
+            if (blurPass == null) {
+                blurPass = new Pass_Blur();
             }
-            blurPass = new Pass_Blur();
         }
         {
-            if (scanLinesPass != null) {
-                return;
+            if (scanLinesPass == null) {
+                scanLinesPass = new Pass_ScanLines();
             }
-            scanLinesPass = new Pass_ScanLines();
         }
     }
 
     public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData) {
         {
-            if (blurPass == null) {
-                return;
+            if (blurPass != null) {
+                renderer.EnqueuePass(blurPass);
             }
-            renderer.EnqueuePass(blurPass);
         }
         {
-            if (scanLinesPass == null) {
-                return;
+            if (scanLinesPass != null) {
+                renderer.EnqueuePass(scanLinesPass);
             }
-            renderer.EnqueuePass(scanLinesPass);
         }
     }
 
     public override void SetupRenderPasses(ScriptableRenderer renderer, in RenderingData renderingData) {
         {
             base.SetupRenderPasses(renderer, renderingData);
-            if (blurPass == null) {
-                return;
+            if (blurPass != null) {
+                blurPass.Setup(renderer.cameraColorTargetHandle);
             }
-            blurPass.Setup(renderer.cameraColorTargetHandle);
         }
         {
             base.SetupRenderPasses(renderer, renderingData);
-            if (scanLinesPass == null) {
-                return;
+            if (scanLinesPass != null) {
+                scanLinesPass.Setup(renderer.cameraColorTargetHandle);
             }
-            scanLinesPass.Setup(renderer.cameraColorTargetHandle);
         }
     }
 }

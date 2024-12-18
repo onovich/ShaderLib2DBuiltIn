@@ -14,7 +14,7 @@ Shader "Custom/Shader_ScanLines"
     SubShader 
     {
 
-        Tags { "RenderType"="Transparent" }
+        Tags { "RenderType"="Transparent" "RenderPipeline" = "UniversalPipeline" }
         LOD 100
 
         // 设置透明混合模式
@@ -22,6 +22,7 @@ Shader "Custom/Shader_ScanLines"
 
         Pass 
         {
+            Tags { "LightMode" = "UniversalForward" }
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
