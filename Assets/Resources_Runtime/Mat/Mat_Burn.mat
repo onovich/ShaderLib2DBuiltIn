@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mat_Ripple
-  m_Shader: {fileID: 4800000, guid: 082c57ab19db74bf1ba8075e625c6ab0, type: 3}
+  m_Name: Mat_Burn
+  m_Shader: {fileID: 4800000, guid: a638a029de0d343bb88b7f314769ca0e, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -27,11 +27,16 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: 62050eaa912334115880bae67bb6bebe, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Amplitude: 0.63
-    - _Frequency: 5.5
-    - _Speed: 0
+    - _BorderWidth: 0.02
+    - _BurnMult: 0.135
+    - _Radius: 0
     m_Colors:
-    - _Center: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - _BurnColor: {r: 1, g: 0.29999998, b: 0, a: 1}
+    - _Position: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
